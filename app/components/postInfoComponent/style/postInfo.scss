@@ -1,0 +1,51 @@
+
+.post-info-wrapper {
+  width: 540px;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
+}
+.post-in-category {
+  padding: 15px 5px;
+  display: flex;
+  flex-direction: row;
+  &::before {
+    display: block;
+    position: relative;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('../../../assets/img/icon-tags.png');
+  }
+}
+
+.post-comment {
+  padding: 15px 5px;
+  display: flex;
+  flex-direction: row;
+  border-left: 1px solid #BBB;
+  border-right: 1px solid #BBB;
+  &::before {
+    display: block;
+    position: relative;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('../../../assets/img/icon-comments.png');
+  }
+}
+
+.post-author {
+  padding: 15px 5px;
+  display: flex;
+  flex-direction: row;
+  &::before {
+    display: block;
+    position: relative;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('../../../assets/img/icon-user.png');
+  }
+}

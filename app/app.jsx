@@ -1,17 +1,13 @@
-const ReactDOM = require("react-dom/client");
-const React = require("react");
-const Header = require("./components/header.jsx");
-const Article = require("./components/article.jsx");
-  
-const header = " Статья №1";
-const article = "Тут должен быть текст первой статьи!";
+import React from 'react';
+import ReactDOM from "react-dom/client";
+import Blog from './components/blogComponent/blog';
+import './index.scss'
   
 ReactDOM.createRoot(
-    document.getElementById("app")
+  document.getElementById("app")
 )
 .render(
   <div>
-    <Header text={header} />
-    <Article content={article} />
+    <Blog />
   </div>
 );

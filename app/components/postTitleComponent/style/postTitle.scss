@@ -1,0 +1,17 @@
+.post-title-h2 {
+  width: 540px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.0em;
+  margin-bottom: 20px;
+}
+
+.post-title-a {
+  text-decoration: none;
+  width: 100%;
+  transition: 0.3s;
+  color: #444444;
+  &:hover {
+    color: #EA4C88;
+  }
+}

@@ -24,6 +24,22 @@ module.exports = {
       options: {
         presets:[ "@babel/preset-react"] // используемые плагины
       }
-    }]
+    },
+    {
+      test: /\.s[ac]ss$/i,
+      use: [
+        { loader: 'style-loader' },
+        {
+          loader: 'css-loader',
+          options: {
+            modules: false,
+          },
+        },
+        { loader: 'sass-loader' },
+      ],
+    }],
+  },
+  resolve: {
+    extensions: ['*', '.js', '.jsx', '.css'],  
   }
 }
