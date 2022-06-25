@@ -1,0 +1,33 @@
+.logo-wrapper {
+  width: 200px;
+  padding-top: 20px;
+  line-height: 2.2em;
+  padding-left: 20px;
+  cursor: pointer;
+  .logo-h1 {
+    color: #FFF;
+    padding: 10px 0 0 0;
+    margin: 0;
+    font-size: 60px;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.20);
+    transition: 0.3s;
+  }
+  .logo-p {
+    color: #EA4C88;
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.20);
+    transition: 0.3s;
+  }
+  &:hover {
+    .logo-h1 {
+      color: #DBDBD8;
+      transition: 0.3s;
+    }
+    .logo-p {
+      color: #E93A7D;
+      transition: 0.3s;
+    }
+  }
+}

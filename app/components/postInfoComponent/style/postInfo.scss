@@ -7,9 +7,10 @@
   border-bottom: 1px solid #BBB;
 }
 .post-in-category {
-  padding: 15px 5px;
+  padding: 15px 7px 15px 5px;
   display: flex;
   flex-direction: row;
+  align-items: self-end;
   &::before {
     display: block;
     position: relative;
@@ -21,11 +22,12 @@
 }
 
 .post-comment {
-  padding: 15px 5px;
+  padding: 15px 7px 15px 5px;
   display: flex;
   flex-direction: row;
   border-left: 1px solid #BBB;
   border-right: 1px solid #BBB;
+  align-items: self-end;
   &::before {
     display: block;
     position: relative;
@@ -37,9 +39,10 @@
 }
 
 .post-author {
-  padding: 15px 5px;
+  padding: 15px 7px 15px 5px;
   display: flex;
   flex-direction: row;
+  align-items: self-end;
   &::before {
     display: block;
     position: relative;
@@ -47,5 +50,26 @@
     width: 20px;
     height: 20px;
     background-image: url('../../../assets/img/icon-user.png');
+  }
+}
+
+.post-info-a {
+  margin: 0 5px;
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.0em;
+  transition: 0.3s;
+  color: #444444;
+  &:not(:last-child):after {
+    content: ',';
+  }
+  &:not(:last-child) {
+    margin-right: 0;
+    padding-right: 0;
+  }
+  &:hover {
+    color: #EA4C88;
   }
 }

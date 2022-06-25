@@ -7,14 +7,14 @@ function PostInfo(props) {
     <div className='post-info-wrapper'>
       <div className='post-in-category'>
         {props.category.map(element => {
-          return <a href='#'>{element}</a>
+          return <a className='post-info-a' href='#'>{element}</a>
         })}
       </div>
       <div className='post-comment'>
-        <a href="">{props.comment} комментариев</a>
+        <a className='post-info-a' href="">{props.comment} комментариев</a>
       </div>
       <div className='post-author'>
-        <a href="">{props.author}</a>
+        <a className='post-info-a' href="">{props.author}</a>
       </div>
     </div>
   );

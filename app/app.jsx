@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from "react-dom/client";
 import Blog from './components/blogComponent/blog';
+import Header from './components/headerComponent/header';
 import './index.scss'
   
 ReactDOM.createRoot(
@@ -8,6 +9,7 @@ ReactDOM.createRoot(
 )
 .render(
   <div>
+    <Header />
     <Blog />
   </div>
 );

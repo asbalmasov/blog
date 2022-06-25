@@ -5,6 +5,7 @@ import PostTitle from '../postTitleComponent/postTitle';
 import PostDate from './../postDateComponent/postDate';
 import PostImage from './../postImageComponent/postImage';
 import './style/post.scss'
+import Menu from './../menuComponent/menu';
   
 function Post(props) {
   const dateDayCreatePost = '23';
@@ -33,6 +34,7 @@ function Post(props) {
           author = {postAuthor}
         />
       </div>
+      <Menu />
     </div>
   );
 }
