@@ -1,12 +1,11 @@
 const path = require("path");
-__dirname
    
 module.exports = {
   mode: "development",
   entry: "./index.js", // входная точка - исходный файл
   output: {
     path: path.resolve(__dirname, "./public"), // путь к каталогу выходных файлов - папка public
-    publicPath: "/",
+    publicPath: "/public/",
     filename: "bundle.js" // название создаваемого файла
   },
   devServer: {
@@ -14,7 +13,6 @@ module.exports = {
       directory: path.join(__dirname, '/')
     },
     port: 8081,
-    compress: true,
     open: true,
     historyApiFallback: true,
   },
