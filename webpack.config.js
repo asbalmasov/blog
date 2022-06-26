@@ -2,19 +2,19 @@ const path = require("path");
    
 module.exports = {
   mode: "development",
-  entry: "./app/app.jsx", // входная точка - исходный файл
+  entry: "./index.js", // входная точка - исходный файл
   output: {
     path: path.resolve(__dirname, "./public"), // путь к каталогу выходных файлов - папка public
     publicPath: "/public/",
     filename: "bundle.js" // название создаваемого файла
   },
   devServer: {
-    historyApiFallback: true,
     static: {
-      directory: path.join(__dirname, "/"),
+      directory: path.join(__dirname, '/')
     },
     port: 8081,
-    open: true
+    open: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [{ // загрузчик для jsx
@@ -24,6 +24,22 @@ module.exports = {
       options: {
         presets:[ "@babel/preset-react"] // используемые плагины
       }
-    }]
+    },
+    {
+      test: /\.s[ac]ss$/i,
+      use: [
+        { loader: 'style-loader' },
+        {
+          loader: 'css-loader',
+          options: {
+            modules: false,
+          },
+        },
+        { loader: 'sass-loader' },
+      ],
+    }],
+  },
+  resolve: {
+    extensions: ['*', '.js', '.jsx', '.css'],  
   }
 }

@@ -1,0 +1,33 @@
+.blog-container {
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-title-h2 {
+  display: flex;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #444;
+  background: #EBEBE8;
+  &::before {
+    position: relative;
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #B0B0B0;
+    margin: auto 20px auto 0;
+  }
+  &::after {
+    box-sizing: border-box;
+    position: relative;
+    content: '';
+    margin: auto 0 auto 20px;
+    width: calc(100% - 355px);
+    height: 1px;
+    background-color: #B0B0B0;
+  }
+}

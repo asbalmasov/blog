@@ -1,0 +1,40 @@
+.date-wrapper {
+  margin-left: 10px;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  display: flex;
+  width: 90px;
+  height: 90px;
+  border: 10px solid;
+  border-color: #414141;
+  border-radius: 50%;
+  background-color: #292929;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 7px 7px 0px -5px rgba(0, 0, 0, 0.20);
+  color: #F1F1F1;
+}
+
+.date-wrapper:hover {
+  border-color: #DE6090;
+  background-color: #414141;
+  color: #fff;
+}
+
+.date-day {
+  padding-top: 5px;
+  font-size: 50px;
+}
+
+.date-month {
+  position: absolute;
+  padding: 52px;
+  font-size: 16px;
+}
+
+.date-year {
+  position: absolute;
+  padding: 69px;
+  font-size: 16px;
+}

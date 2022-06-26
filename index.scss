@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EBEBE8;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+}
+
+::selection {
+  background: #DE6090;
+  color: #fff;
+}

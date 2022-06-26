@@ -1,0 +1,34 @@
+.image-wrapper {
+  width: 540px;
+  height: 270px;
+  background-color: #B0B0B0;
+  box-shadow: 2px 2px 0px rgba(0,0,0,.2);
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  &::before {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s;
+    display: inline-flex;
+    position: relative;
+    content: '+';
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    color: #F1F1F1;
+    border: 2px solid #F1F1F1;
+    border-radius: 50%;
+    top: 120px;
+    left: 255px;
+    font-size: 30px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &:hover {
+    background-color: #DE6090;
+    &::before {
+      opacity: 1;
+    }
+  }
+}
