@@ -1,20 +1,22 @@
 const path = require("path");
+__dirname
    
 module.exports = {
   mode: "development",
-  entry: "./app/app.jsx", // входная точка - исходный файл
+  entry: "./index.js", // входная точка - исходный файл
   output: {
     path: path.resolve(__dirname, "./public"), // путь к каталогу выходных файлов - папка public
-    publicPath: "/public/",
+    publicPath: "/",
     filename: "bundle.js" // название создаваемого файла
   },
   devServer: {
-    historyApiFallback: true,
     static: {
-      directory: path.join(__dirname, "/"),
+      directory: path.join(__dirname, '/')
     },
     port: 8081,
-    open: true
+    compress: true,
+    open: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [{ // загрузчик для jsx

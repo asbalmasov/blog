@@ -1,27 +1,9 @@
 .post-anonce-wrapper {
-  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-  width: 540px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
 }
 
 .post-anonce {
-  width: 100%;
-  color: #888;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2em;
-  margin-bottom: 20px;
-}
-
-.post-anonce-read-more {
-  display: block;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.0em;
-  transition: 0.3s;
-  color: #444444;
-  margin-bottom: 20px;
-  &:hover {
-    color: #EA4C88;
-  }
+  margin-left: 40px;
 }

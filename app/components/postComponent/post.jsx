@@ -1,11 +1,10 @@
 import React from 'react';
-import PostAnonce from '../postAnonceComponent/postAnonce';
 import PostInfo from '../postInfoComponent/postInfo';
 import PostTitle from '../postTitleComponent/postTitle';
-import PostDate from './../postDateComponent/postDate';
-import PostImage from './../postImageComponent/postImage';
-import './style/post.scss'
-import Menu from './../menuComponent/menu';
+import PostDate from '../postDateComponent/postDate';
+import PostImage from '../postImageComponent/postImage';
+import './style/post.scss';
+import PostDescription from '../postDescriptionComponent/postDescription';
   
 function Post(props) {
   const dateDayCreatePost = '23';
@@ -16,6 +15,7 @@ function Post(props) {
   const postCategory = ["Технологий", "Новости"];
   const postComment = '5';
   const postAuthor = 'BalmasovAS';
+  const postUrl = '/blog/post_url'
 
   return ( 
     <div className='post-wrapper'>
@@ -27,14 +27,12 @@ function Post(props) {
       <div className='post'>
         <PostImage />
         <PostTitle title = {postTitle} />
-        <PostAnonce anonce = {postAnonce} />
         <PostInfo 
           category = {postCategory}
           comment = {postComment}
           author = {postAuthor}
         />
       </div>
-      <Menu />
     </div>
   );
 }
